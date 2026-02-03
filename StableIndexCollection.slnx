@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="BenchTest/BenchTest.csproj" Id="226a90e3-a128-4e79-bc65-4d6247319d67" />
+  <Project Path="StableIndexCollection/StableIndexCollection.csproj" />
+  <Project Path="UnitTests/UnitTests.csproj" Id="fb18e7a9-f6a1-4aa1-9035-cae127f5ef73" />
+</Solution>
