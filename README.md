@@ -1,6 +1,6 @@
 # C# Implementation of https://github.com/johnBuffer/StableIndexVector
 
-From https://youtu.be/L4xOCvELWlU?si=XLfA5Pe0euxiIB2W
+From [ Pezzza's Work - The magic container ]( https://youtu.be/L4xOCvELWlU?si=XLfA5Pe0euxiIB2W )
 
 ## Bench Test Output
 ```
