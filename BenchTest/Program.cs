@@ -40,14 +40,16 @@ for (var l = 1; l < 5; l++)
     {
         for (var i = 0; i < REMOVE_COUNT; i++)
         {
-            linkedListInt.Remove(i);
+            var index = random.Next(0, linkedListInt.Count);
+            linkedListInt.Remove(index);
         }
     }, "remove LinkedList<int>");
     BenchmarkFunction(() =>
     {
         for (var i = 0; i < REMOVE_COUNT; i++)
         {
-            linkedListInt.AddLast(i);
+            var item = random.Next(0, ITEM_COUNT);
+            linkedListInt.AddLast(item);
         }
     }, "add LinkedList<int>");
 
@@ -69,14 +71,16 @@ for (var l = 1; l < 5; l++)
     {
         for (var i = 0; i < REMOVE_COUNT; i++)
         {
-            listInt.Remove(i);
+            var index = random.Next(0, ITEM_COUNT);
+            listInt.Remove(index);
         }
     }, "remove List<int>");
     BenchmarkFunction(() =>
     {
         for (var i = 0; i < REMOVE_COUNT; i++)
         {
-            listInt.Add(i);
+            var item = random.Next(0, listInt.Count);
+            listInt.Add(item);
         }
     }, "add List<int>");
 
@@ -98,14 +102,16 @@ for (var l = 1; l < 5; l++)
     {
         for (var i = 0; i < REMOVE_COUNT; i++)
         {
-            sivInt.Remove(i);
+            var index = random.Next(0, sivInt.Count);
+            sivInt.RemoveAt(index);
         }
     }, "remove StableIndexCollection<int>");
     BenchmarkFunction(() =>
     {
         for (var i = 0; i < REMOVE_COUNT; i++)
         {
-            sivInt.Add(i);
+            var item = random.Next(0, ITEM_COUNT);
+            sivInt.Add(item);
         }
     }, "add StableIndexCollection<int>");
 
